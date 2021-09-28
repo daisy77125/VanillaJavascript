@@ -13,4 +13,4 @@ const obj = {
 };
 
 obj.method1(); // obj
-obj.method2(); // the global object
+obj.method2(); // window in browser, global in node

@@ -1,10 +1,12 @@
+function showTag(tag) {
+  console.log(this.title, tag);
+}
+
 const video = {
   title: "TITLE",
   tags: ["a", "b", "c"],
   showTags: function () {
-    this.tags.forEach(function (tag) {
-      console.log(this.title, tag);
-    });
+    this.tags.forEach(showTag);
   },
 };
 
@@ -13,4 +15,4 @@ video.showTags();
 // undefined b
 // undefined c
 
-// see this3.js
+// see video3.js
